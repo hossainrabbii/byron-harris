@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+#home {
+  background: url("./images/banner.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+#home.splash_banner {
+  background: url("./images/imani-bahati-LxVxPA1LOVM-unsplash.jpg") no-repeat
+    center center fixed;
+}
+
+#home.ukf_banner {
+  background: url("./images/ukf-bg.jpg") no-repeat center center fixed;
+}
+@layer components {
+  .container {
+    @apply mx-auto px-4 md:px-0;
+  }
+}
+
+@layer base {
+  .nav_link {
+    color: #f1f1f1;
+    font-weight: 600;
+    padding: 15px 10px;
+    display: flex;
+    gap: 8px;
+    border-radius: 5px;
+  }
+  .nav_link.active,
+  .nav_link:hover {
+    background-color: #161179;
+  }
+  .nav_link svg {
+    width: 20px;
+    height: 20px;
+  }
+  .color_black {
+    color: #09122c;
+    background-color: #09122c;
+  }
+  .color_blue {
+    color: #161179;
+  }
+}
+
+.projects_item {
+  border: 1px solid #cfcfcf;
+}
+.projects_item .img {
+  overflow: hidden;
+  position: relative;
+  height: 480px;
+  background-color: #00000048;
+}
+
+.projects_item .img img {
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.projects_item .img:hover img {
+  transform: scale(1.2);
+  opacity: 0.4;
+}
+
+.projects_item .img svg {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  transform: translate(-50%, -50%);
+}
+.projects_item .img:hover svg {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .projects_item .img {
+    height: 280px;
+  }
+}
+
+.ukf_banner .banner_text,
+.splash_banner .banner_text {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: "Dancing Script", cursive !important;
+}
+.banner_text {
+  font-family: "Dancing Script", cursive !important;
+}
+
+.social {
+  display: flex;
+  margin: 0 auto;
+  gap: 25px;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+}
+.social a svg {
+  width: 26px;
+  height: 26px;
+  color: #fff;
+}
+.close_bar,
+.hamburg {
+  display: none;
+}
+
+.pro_img {
+  height: 350px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pro_img {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1240px) {
+  .pro_img {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1241px) and (max-width: 1440px) {
+  .pro_img {
+    height: 220px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1900px) {
+  .pro_img {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pro_img {
+    height: 100px;
+  }
+  body {
+    position: relative;
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar.active {
+    display: block;
+  }
+
+  .hamburg.close {
+    display: none;
+  }
+  /* .close_bar, */
+  .hamburg {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #161179;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 111;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 1.4s;
+  }
+  .close_bar {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  .close_bar svg,
+  .hamburg svg {
+    color: #fff;
+  }
+  .banner_text {
+    padding: 40px !important;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+#preloader {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 5rem;
+  z-index: 11111;
+}
+
+#preloader img {
+  width: 100px;
+}

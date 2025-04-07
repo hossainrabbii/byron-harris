@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Byron Harris</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link href="./assets/main.css" rel="stylesheet" />
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- lightbox -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+      integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader (Typing Effect) -->
+    <div
+      id="preloader"
+      class="fixed inset-0 flex items-center justify-center bg-[#09122C] z-50"
+    >
+      <img src="./assets/images/logowhite.png" alt="" />
+    </div>
+    <div class="hamburg active">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="26"
+        height="26"
+        fill="currentColor"
+        class="bi bi-list"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+        />
+      </svg>
+    </div>
+
+    <div class="flex">
+      <!-- sidebar -->
+      <div
+        class="bg-[#09122c] w-[280px] md:w-[20%] p-4 h-screen sticky top-0 sidebar"
+      >
+        <div class="close_bar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-x-square-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"
+            />
+          </svg>
+        </div>
+        <div class="w-4/5 border mx-auto pro_img overflow-hidden rounded">
+          <img src="./assets/images/logowhite.png" alt="Byron" />
+        </div>
+        <!-- <p class="text-xl md:text-2xl text-center text-white font-bold mt-4">
+          Byron Harris
+        </p> -->
+
+        <div class="flex flex-col mt-8">
+          <a href="#" class="nav_link">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-house"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                />
+              </svg>
+            </span>
+            HOME</a
+          >
+          <a href="#about" class="nav_link">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                />
+              </svg>
+            </span>
+            ABOUT</a
+          >
+          <a href="#experience" class="nav_link">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-check"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M10.854 7.854a.5.5 0 0 0-.708-.708L7.5 9.793 6.354 8.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"
+                />
+                <path
+                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                />
+              </svg>
+            </span>
+            EXPERIENCE</a
+          >
+          <a href="#skills" class="nav_link">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-hdd-rack"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m2 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"
+                />
+                <path
+                  d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1v2H2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-1V7h1a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m0 7v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-3-4v2H4V7z"
+                />
+              </svg>
+            </span>
+            SKILLS</a
+          >
+          <a href="#projects" class="nav_link">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-kanban"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13.5 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                />
+                <path
+                  d="M6.5 3a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm-4 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm8 0a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z"
+                />
+              </svg>
+            </span>
+            PROJECTS</a
+          >
+          <a href="#contact" class="nav_link">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                />
+              </svg>
+            </span>
+            CONTACT</a
+          >
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="w-full md:w-[80%] scroll-y leftbar">
+        <!-- banner -->
+        <section
+          id="home"
+          class="h-screen w-full flex justify-center items-center"
+        >
+          <div
+            class="banner_text p:10 md:p-20 text-center opacity-10 scale-50 transition-all duration-500 ease-out"
+          >
+            <h1 class="text-3xl md:text-7xl font-bold text-[#09122C]">
+              Byron Harris
+            </h1>
+          </div>
+        </section>
+        <!-- /banner -->
+        <main class="p-4">
+          <!-- about -->
+          <section id="about" class="my-20">
+            <div class="container" data-aos="fade-up" data-aos-delay="500">
+              <div class="flex flex-col md:flex-row gap-4 items-center">
+                <img src="./assets/images/propic.webp" alt="" class="w-1/3" />
+                <div>
+                  <h2 class="text-5xl font-bold mb-8 mt-8 text-[#002766]">
+                    ABOUT ME
+                  </h2>
+
+                  <h3 class="text-2xl font-bold">UI/UX Designer</h3>
+                  <p class="py-2">
+                    I consider myself to be a very <strong>reliable</strong> and
+                    <strong>honest</strong>
+                    individual who has an open mind, excellent
+                    <strong>communication skills, self-motivated</strong> and
+                    <strong>enthusiastic</strong> with a keen sense to learn. I
+                    have a willingness to work and co-operate with others and I
+                    am <strong>driven</strong> and
+                    <strong>hard working</strong>.
+                  </p>
+                  <p class="my-1">> <strong>Birthday</strong>:17th January</p>
+                  <p class="my-1">
+                    > <strong>Email</strong>: byron.harris@hotmail.co.uk
+                  </p>
+                  <p class="my-1">
+                    > <strong>Location</strong>: Preston, Lancashire
+                  </p>
+                  <p class="my-1">> <strong>Phone</strong>: 07874009817</p>
+                  <h3 class="text-2xl font-bold mt-4">EDUCATION</h3>
+                  <p><strong>Leeds Beckett University </strong></p>
+                  <p>BA Graphic Arts And Design (HONS)</p>
+                  <a href="./assets/Cv 2025.pdf" class="inline-block mt-6">
+                    <button
+                      class="px-6 py-3 bg-[#002766] text-white font-bold rounded-lg shadow-[0_5px_0_#000)] hover:shadow-[0_2px_0_#000] active:shadow-none hover:translate-y-1 active:translate-y-2 transition-all duration-150"
+                    >
+                      Download CV
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- /about -->
+
+          <!-- EXPERIENCE -->
+          <section id="experience" class="my-12 md:my-24 py-8 md:py-12">
+            <div class="container" data-aos="fade-up">
+              <h2 class="text-5xl font-bold my-8 text-[#002766] pb-8">
+                EXPERIENCE
+              </h2>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <div
+                  class="flex gap-2 my-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                    ></div>
+                    <div class="w-[2px] h-full bg-[#002766] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl">John Mark Ltd</h4>
+                    <p class="italic my-4">
+                      Print Specialist - Wallpaper, Digital Artworking, Printing
+                      - UX
+                    </p>
+                    <p class="bg-gray-200 inline-block px-4 mb-4">2019 - Now</p>
+                    <p>
+                      Working within tight deadlines, keeping organised,
+                      carrying out tasks to the highest quality, working with
+                      world class designers, website management and helping
+                      customers achieve their dream wall coverings for sale are
+                      but a staple in the tasks that I carry out on a day to day
+                      basis at John Marks Ltd.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div
+                  class="flex gap-2 my-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="700"
+                >
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                    ></div>
+                    <div class="w-[2px] h-full bg-[#002766] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl">Heckford Print Solutions</h4>
+                    <p class="italic my-4">
+                      Print Specialist - Signage, Digital Artworking, Printing,
+                      Exhibitions
+                    </p>
+                    <p class="bg-gray-200 inline-block px-4 mb-4">2018-2019</p>
+
+                    <p>
+                      Working with a small but driven team we strive to make
+                      sure we meet customer needs that’s one of the main things
+                      I’ve learnt during my time at Heckords. My duties involve
+                      processing print ready artwork on the mimaki printers,
+                      making up signs for companies such as Wainhomes, Priestly
+                      College, sandcastle water park(Blackpool) and many other
+                      companies we provide, signs, flags, banners and
+                      exhibitions for. Unlike my old job positions I have had
+                      the odd occasion to go out and physically see first-hand
+                      how the signs and exhibitions go up which has increased my
+                      knowledge of the print industry exponentially.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div
+                  class="flex gap-2 my-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                    ></div>
+                    <div class="w-[2px] h-full bg-[#002766] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl">BAE Systems(XEROX)</h4>
+                    <p class="italic my-4">
+                      Art worker & Print Specialist - Posters, Business Card,
+                      flight manuals
+                    </p>
+                    <p class="bg-gray-200 inline-block px-4 mb-4">2014-2018</p>
+                    <p>
+                      Working with a small team of four sometimes three we
+                      manage perform a multiple of tasks at once enabling us to
+                      complete tasks on scheduled deadlines. Using my knowledge
+                      of operating programmes such as adobe illustrator,
+                      Photoshop and InDesign I’m able to use these to my full
+                      advantage and produce aesthetically pleasing pieces of
+                      work ready for print. Combined with my knowledge of print
+                      I’m able to carry out processes from computer design to
+                      final product.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div
+                  class="flex gap-2 my-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="700"
+                >
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                    ></div>
+                    <div class="w-[2px] h-full bg-[#002766] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl">AstSigns</h4>
+                    <p class="italic my-4">
+                      Print Operative and Graphic Designer - Getting artwork
+                      print ready, print finishing
+                    </p>
+                    <p class="bg-gray-200 inline-block px-4 mb-4">2011-2014</p>
+
+                    <p>
+                      Being part of one of the most prestigious vehicle wrapping
+                      companies in the UK I had my work set out for me from day
+                      one. But I quickly progressed up through the ranks
+                      starting with weeding and taping to becoming a lead member
+                      in production as well as being given a role as a design
+                      finisher. Working with companies such as Malcom’s, Eddie
+                      Stobart’s, Yodel, DFS, Royal Mail, DX and many others.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div
+                  class="flex gap-2 my-4"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <div class="flex flex-col items-center">
+                    <div
+                      class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                    ></div>
+                    <div class="w-[2px] h-full bg-[#002766] rounded-full"></div>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl">Build Your Own Business</h4>
+                    <p class="italic my-4">
+                      Graphic Designer - Logos, Spreadsheets, Posters, ID Cards
+                    </p>
+                    <p class="bg-gray-200 inline-block px-4 mb-4">2011-2011</p>
+                    <p>
+                      Mostly dealing with local businesses around the Lake
+                      District I was brought in to create a bulk of design
+                      packages. Whether it be for a hairdressers, clothing
+                      boutiques, coffee shops, garden centres and other
+                      businesses. I would create and design template packages
+                      that could then be used for posters, business cards,
+                      vehicle wraps basically whatever your venture requires
+                      with businesses starting out or needing a fresh look.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  -->
+              </div>
+            </div>
+          </section>
+          <!-- /EXPERIENCE -->
+
+          <!-- skills -->
+          <section id="skills" class="my-12 md:my-24 py-8 md:py-12">
+            <div class="container" data-aos="fade-up">
+              <h2 class="text-5xl font-bold my-8 text-[#002766] pb-8">
+                SKILLS
+              </h2>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 gap-y-12 mt-8">
+                <div
+                  class="overflow-hidden rounded-md"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <!-- <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <img src="./assets/images/icons/design-48.png" alt="" />
+                    </span>
+                  </div> -->
+                  <div class="p-4 flex gap-2 my-4">
+                    <div class="flex flex-col items-center">
+                      <div
+                        class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                      ></div>
+                      <div
+                        class="w-[2px] h-full bg-[#002766] rounded-full"
+                      ></div>
+                    </div>
+                    <div>
+                      <h4 class="text-xl md:text-2xl font-bold mb-4">
+                        DESIGN SKILLS
+                      </h4>
+                      <div class="flex flex-wrap gap-2">
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/prototyping-64.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Prototyping</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/strategy-64.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Design Strategy</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/repor7ng.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Style Guides</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/mood.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Mood Boards</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/custom graphics.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Custom Graphics</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/illustrations.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Illustrations</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/text design.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Text Design</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/storyboarding.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Storyboarding</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/wireframing.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Wireframing</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/time management.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Time Managementing</strong>
+                        </div>
+
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/branding-48.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Developing Brand and Visualidentity</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-aos="zoom-in-right"
+                  data-aos-delay="600"
+                  class="overflow-hidden rounded-md"
+                >
+                  <!-- <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <img
+                        src="./assets/images/icons/manual-64.png"
+                        alt=""
+                        class="w-[45px] h-[45px]"
+                      />
+                    </span>
+                  </div> -->
+                  <div class="p-4 flex gap-2 my-4">
+                    <div class="flex flex-col items-center">
+                      <div
+                        class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                      ></div>
+                      <div
+                        class="w-[2px] h-full bg-[#002766] rounded-full"
+                      ></div>
+                    </div>
+                    <div>
+                      <h4 class="text-xl md:text-2xl font-bold mb-4">
+                        RESEARCH SKILLS
+                      </h4>
+                      <div class="flex flex-wrap gap-2">
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/Surveys.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Surveys</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/feedback.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Working from Customer Feedback</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/repor7ng.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Documenting and Reporting</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden rounded-md"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <div class="p-4 flex gap-2 my-4">
+                    <div class="flex flex-col items-center">
+                      <div
+                        class="w-[20px] h-[20px] bg-[#002766] rounded-full"
+                      ></div>
+                      <div
+                        class="w-[2px] h-full bg-[#002766] rounded-full"
+                      ></div>
+                    </div>
+                    <div>
+                      <h4 class="text-xxl md:text-2xl font-bold mb-4">TOOLS</h4>
+                      <div class="flex flex-wrap gap-2">
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/Adobe Photoshop.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Adobe Photoshop</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/adobe-illustrator-48.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Adobe Illustrator</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/adobe-indesign-48.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Adobe InDesign</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/caldera.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Caldera</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/ava-64.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>AVA</strong>
+                        </div>
+                        <div
+                          class="flex w-fit items-center gap-2 shadow-[1px_3px_0px_1px_rgba(0,_0,_0,_0.2)] rounded p-2"
+                        >
+                          <img
+                            src="./assets/images/icons/figma-48.png"
+                            alt="prototyping"
+                            class="w-[35px] h-[35px]"
+                          />
+                          <strong>Figma</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 
+              <div class="flex flex-col md:flex-row gap-4 mt-8">
+                <div
+                  class="overflow-hidden w-full md:w-1/3 border border-[#ccc] shadow-[0px_8px_0px_0px_rgba(0,_0,_0,_0.2)] rounded-md drop-shadow-lg"
+                >
+                  <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="currentColor"
+                        class="bi bi-box2-heart"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982"
+                        />
+                        <path
+                          d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zm0 1H7.5v3h-6zM8.5 4V1h3.75l2.25 3zM15 5v10H1V5z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="text-3xl md:text-5xl mb-4">Magnam dolores</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquam illo culpa non sed perspiciatis recusandae.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden w-full md:w-1/3 border border-[#ccc] shadow-[0px_8px_0px_0px_rgba(0,_0,_0,_0.2)] rounded-md drop-shadow-lg"
+                >
+                  <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="currentColor"
+                        class="bi bi-box2-heart"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982"
+                        />
+                        <path
+                          d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zm0 1H7.5v3h-6zM8.5 4V1h3.75l2.25 3zM15 5v10H1V5z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="text-3xl md:text-5xl mb-4">Magnam dolores</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquam illo culpa non sed perspiciatis recusandae.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden w-full md:w-1/3 border border-[#ccc] shadow-[0px_8px_0px_0px_rgba(0,_0,_0,_0.2)] rounded-md drop-shadow-lg"
+                >
+                  <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="currentColor"
+                        class="bi bi-box2-heart"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982"
+                        />
+                        <path
+                          d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4zm0 1H7.5v3h-6zM8.5 4V1h3.75l2.25 3zM15 5v10H1V5z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="text-3xl md:text-5xl mb-4">Magnam dolores</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Aliquam illo culpa non sed perspiciatis recusandae.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </section>
+
+          <!-- /skills -->
+          <!-- PROJECTS -->
+          <section id="projects" class="my-32 py-20">
+            <div class="container" data-aos="fade-up">
+              <h2 class="text-5xl font-bold my-8 text-[#002766] pb-8">
+                PROJECTS
+              </h2>
+              <div class="flex gap-4 gap-y-4">
+                <a
+                  href="./assets/images/Billboard-Mockup-01.png"
+                  class="w-[31%] flex item-center bg-[#C6C6C6]"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="300"
+                >
+                  <img
+                    src="./assets/images/Billboard-Mockup-01.png"
+                    alt=""
+                    class="w-full"
+                /></a>
+                <a
+                  href="./assets/images/football-sponsored-event-Rollup-banner-Mockup-NEW.png"
+                  class="w-[31%] flex item-center bg-[#C6C6C6]"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="500"
+                >
+                  <img
+                    src="./assets/images/football-sponsored-event-Rollup-banner-Mockup-NEW.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </a>
+                <a
+                  href="./assets/images/Billboard-Mockup-02.png"
+                  class="w-[31%] flex item-center bg-[#C6C6C6]"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="700"
+                >
+                  <img
+                    src="./assets/images/Billboard-Mockup-02.png"
+                    alt=""
+                    class="w-full"
+                  />
+                </a>
+              </div>
+              <div
+                class="flex gap-4 gap-y-4 isotope-container gap-4 items my-8"
+              >
+                <div
+                  class="shadow-[0px_8px_0px_0px_#002766] rounded-md overflow-hidden pb-4 border border-[#CCCCCC]"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <a href="./splash.html">
+                    <img
+                      src="./assets/images/Selected Category.svg"
+                      alt="Splash"
+                    />
+                  </a>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold mb-4">Splash App</h4>
+
+                    <a href="./splash.html" class="inline-block">
+                      <button
+                        class="px-6 py-3 bg-[#002766] text-white font-bold rounded-lg shadow-[0_5px_0_#000)] hover:shadow-[0_2px_0_#000] active:shadow-none hover:translate-y-1 active:translate-y-2 transition-all duration-150"
+                      >
+                        See Details
+                      </button>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="shadow-[0px_8px_0px_0px_#002766] rounded-md overflow-hidden pb-4 border border-[#CCCCCC]"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="700"
+                >
+                  <a href="./ukf-group.html">
+                    <img src="./assets/images/p3.png" alt="Splash" />
+                  </a>
+                  <div class="p-4">
+                    <h4 class="text-xl font-bold mb-4">UKF Group</h4>
+
+                    <a href="./ukf-group.html" class="inline-block">
+                      <button
+                        class="px-6 py-3 bg-[#002766] text-white font-bold rounded-lg shadow-[0_5px_0_#000)] hover:shadow-[0_2px_0_#000] active:shadow-none hover:translate-y-1 active:translate-y-2 transition-all duration-150"
+                      >
+                        See Details
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- contact -->
+          <section id="contact" class="my-12 md:my-24 py-8 md:py-12">
+            <div class="container" data-aos="fade-up">
+              <h2 class="text-5xl font-bold my-8 text-[#002766] pb-8">
+                CONTACT
+              </h2>
+
+              <div class="flex flex-col md:flex-row gap-4 mt-8">
+                <div
+                  class="overflow-hidden w-full md:w-1/3 border border-[#ccc] shadow-[0px_8px_0px_0px_#002766] border-[#ccc] rounded-md drop-shadow-lg"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="400"
+                >
+                  <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="#fff"
+                        class="bi bi-geo-alt"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                        />
+                        <path
+                          d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="text-xl md:text-2xl font-bold mb-4">
+                      Location:
+                    </h4>
+                    <p>Preston, Lancashire</p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden w-full md:w-1/3 border border-[#ccc] shadow-[0px_8px_0px_0px_#002766] rounded-md drop-shadow-lg"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="700"
+                >
+                  <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="#fff"
+                        class="bi bi-envelope"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="text-xl md:text-2xl font-bold mb-4">Email:</h4>
+                    <p>byron.harris@hotmail.co.uk</p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden w-full md:w-1/3 border border-[#ccc] shadow-[0px_8px_0px_0px_#002766] rounded-md drop-shadow-lg"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="1000"
+                >
+                  <div
+                    class="w-[80px] h-[80px] bg-[#002766] rounded-full ml-[-10px] mt-[-10px] flex items-center justify-center"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="#fff"
+                        class="bi bi-phone"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                        />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="p-4">
+                    <h4 class="text-xl md:text-2xl font-bold mb-4">Call:</h4>
+                    <p>07874009817</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /contact -->
+        </main>
+        <footer>
+          <div
+            class="h-[300px] bg-[#09122c] mt-20 flex justify-center items-center border"
+          >
+            <div class="text-center py-12">
+              <p class="text-2xl text-center text-white font-bold">
+                Byron Harris
+              </p>
+
+              <div class="social my-4">
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-twitter-x"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p class="text-white">
+                &copy; <span id="year"></span>
+                <a href=" https://www.fiverr.com/iibbar">Developer</a>. All
+                rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./assets/main.js"></script>
+    <script></script>
+    <script>
+      AOS.init();
+      // Trigger Banner Animation after Page Load
+    </script>
+  </body>
+</html>
